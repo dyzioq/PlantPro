@@ -134,28 +134,28 @@ a{
 }
 .about-section{
     display: flex;
+    flex-direction: column;
     gap: 40px;
     margin-top: 40px;
+}
+.reverse{
+    flex-direction: column-reverse;
 }
 
 .about-section img{
     width: 30rem;
     height: 17.5rem;
+    align-self: center;
 }
 .about-section-text{
     margin: auto;
     text-align: left;
 }
-@media (max-width: 900px) {
+@media screen and (min-width: 1000px) {
     .about-section{
-        flex-direction: column;
-        text-align: center;
-    }
-    .reverse{
-        flex-direction: column-reverse;
+        flex-direction: row;
     }
     .about-section > img{
-        align-self: center;
     }
 }
 /*---------forth section--------*/
