@@ -105,7 +105,7 @@ a{
 
 .team-images{
     margin: 50px auto 0;
-    width: 500px;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -151,17 +151,10 @@ a{
     margin: auto;
     text-align: left;
 }
-@media screen and (min-width: 1000px) {
-    .about-section{
-        flex-direction: row;
-    }
-    .about-section > img{
-    }
-}
 /*---------forth section--------*/
 .contact-us{
 
-    padding: 100px 20%;
+    padding: 100px 10%;
     background-image: url(images/Background-contactx15.png);
     height: 100%;
 
@@ -179,7 +172,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 40%;
+    width: 60%;
 }
 .contact-form-element{
     width: 100%;
@@ -221,4 +214,18 @@ a{
     text-decoration: none;
 }
 
-/*---------fifth section--------*/
+/*---------MEDIA--------*/
+@media screen and (min-width: 1000px) {
+    .about-section{
+        flex-direction: row;
+    }
+    .team-images{
+        width: 500px;
+    }
+    .contact-us{
+        padding: 100px 20%;
+    }
+    .contact-form{
+        width: 40%;
+    }
+}
