@@ -16,7 +16,7 @@
 
 <body>
     <!-- First Section -->
-    <div class="welcome-container" id="welcome">
+    <section class="welcome-container" id="welcome">
 
         <div class="navbar">
             <div class="logo">
@@ -26,24 +26,24 @@
                 <a href="#aboutChapter">About</a>
                 <a href="#contactChapter">Contact</a>
             </div>
-            <button class="LogIn-btn">Log In</button>
+            <a style="display: inline-block;" href="./LogInPage/LandingPage.html" class="LogIn-btn">Log In</a>
         </div>
 
         <div class="welcome-center">
             <h1>Welcome to <span style="color: #F30808;">Plant</span><span style="color: #157A6E;">Pro</span></h1>
             <p style="width: 50%;margin: 1rem auto;">Take your farm to another level with modern technology</p>
-            <button class="LearnMore-btn" onclick="location.href='https://www.figma.com/file/49AxwRuYQ3tmSagmvXxSJ3/PlantPro?node-id=1-2&t=ijoZgnAFE8feUS7W-0'">Learn More</button>
-            <!-- <a href="https://www.figma.com/file/49AxwRuYQ3tmSagmvXxSJ3/PlantPro?node-id=1-2&t=ijoZgnAFE8feUS7W-0" class="LearnMore-btn">Learn More</a> -->
+            <!-- <button class="LearnMore-btn" onclick="location.href='https://www.figma.com/file/49AxwRuYQ3tmSagmvXxSJ3/PlantPro?node-id=1-2&t=ijoZgnAFE8feUS7W-0'">Learn More</button> -->
+            <a style="display: inline-block;" href="https://www.figma.com/file/49AxwRuYQ3tmSagmvXxSJ3/PlantPro?node-id=1-2&t=ijoZgnAFE8feUS7W-0" class="LearnMore-btn">Learn More</a>
             <!-- <input type="button" onclick="location.href='https://www.figma.com/file/49AxwRuYQ3tmSagmvXxSJ3/PlantPro?node-id=1-2&t=ijoZgnAFE8feUS7W-0'" value="Learn More" class="LearnMore-btn"> -->
         
         </div>
 
-    </div>
+    </section>
 
     <!-- Second Section -->
-    <div class="second-main">
+    <second class="second-main">
         <h2>The Team</h2>
-        <p style="width: 85%; margin-left: auto; margin-right: auto;">Our mission is to use modern technology to help farmers with their everyday problems. 
+        <p style="width: 50%; margin-left: auto; margin-right: auto;">Our mission is to use modern technology to help farmers with their everyday problems. 
             We are delivering highly available and easy to use software</p>
         <div class="team-images">
             <div class="profile">
@@ -72,10 +72,10 @@
                 <p><em>QA Tester</em></p>
             </div>
         </div>
-    </div>
+    </second>
 
     <!-- Third Section -->
-    <div class="about" id="aboutChapter">
+    <section class="about" id="aboutChapter">
         <h2>About the Aplication</h2>
         <p style="font-size: larger;">See how you can improve your farming business with PlantPro system.</p>
 
@@ -83,14 +83,14 @@
             <img src="images/choose_job_img.png" alt="choose-job-img">
             <div class="about-section-text">
                 <h3>Start by choosing a job</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit non lacus ut semper. In sollicitudin tincidunt elit non maximus. Proin sagittis, sem non luctus pretium, nunc enim fringilla nisl, quis viverra massa felis sit amet orci. Etiam eu dui enim. </p>
+                <p>Employees start a day with picking up a job that they will do. If you decide to user our software, we will adjust the list to your farm needs.</p>
             </div>
         </div>
 
-        <div class="about-section">
+        <div class="about-section reverse">
             <div class="about-section-text">
                 <h3>Different types of field</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit non lacus ut semper. In sollicitudin tincidunt elit non maximus. Proin sagittis, sem non luctus pretium, nunc enim fringilla nisl, quis viverra massa felis sit amet orci. Etiam eu dui enim. </p>
+                <p>Our clients often have large fields in their farm - that’s why the next step for your worker is to pick a field that they will work on. This way your business is becoming more efficient because work is split equally between employees.</p>
             </div>
             <img src="images/field_types_img.png" alt="field-types-img">
         </div> 
@@ -102,28 +102,28 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit non lacus ut semper. In sollicitudin tincidunt elit non maximus. Proin sagittis, sem non luctus pretium, nunc enim fringilla nisl, quis viverra massa felis sit amet orci. Etiam eu dui enim. </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Forth Section-->
-    <div class="contact-us" id="contactChapter">
+    <section class="contact-us" id="contactChapter">
         <h2>Contact Us</h2>
 
-
         <div class="contact-row">
-            <div class="contact-form">
-                <p>something</p>
-            </div>
+            <form class="contact-form" action="mailto:dycha2217b@gmail.com">
+                <input class="contact-form-element" type="text" name="firstname" placeholder="Your Name..">
+                <input class="contact-form-element" type="email" name="mail" placeholder="Your Email..">
+                <textarea class="contact-form-element" id="subject" name="subject" placeholder="Message.." style="height:200px; resize: none;"></textarea>
+
+                <input class="Send-btn" type="submit" value="Send">
+            </form>
 
             <div class="contact-info">
                 <p><i class="fa-solid fa-location-dot contact-icon" style="color: #157a6e;"></i><i>Akademicka 2, 44-100 Gliwice</i></p>
                 <p><i class="fa-solid fa-comments contact-icon" style="color: #157a6e;"></i><i>contact@plantpro.com</i></p>
-                <p><i class="fa-solid fa-phone contact-icon" style="color: #157a6e;"></i><i>+32 237 19 40</i></p>
-
-                
+                <p><i class="fa-solid fa-phone contact-icon" style="color: #157a6e;"></i><i>32 237 19 40</i></p>
+            </div>
         </div>
-        </div>
-
-    </div>
+    </section>
     
 </body>
 </html>
